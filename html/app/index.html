@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <!--<base href="location/">-->
+        <meta charset="UTF-8">
+        <title>绿盟云安全</title>
+        <link rel="stylesheet" href="lib/css/bootstrap.css" type="text/css">
+        <link rel="stylesheet" href="css/overview.css" type="text/css">
+        <link rel="stylesheet" href="lib/css/pagination.css" type="text/css">
+        <link rel="stylesheet" href="lib/css/font-awesome.min.css" type="text/css">
+    </head>
+    <body ng-app="ChuanMen">
+
+        <!--导航-->
+        <nav class="navbar navbar-default" role="navigation" ng-controller="navCtroller">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="/">绿盟星云</a>
+                </div>
+                <div>
+                    <ul class="nav navbar-nav">
+                        <li ng-class="{active:'news'==tabType}" ng-click="switchTab('news')">
+                            <a ui-sref="news" href="#">新闻</a>
+                        </li>
+                        <li ng-class="{active:'videos'==tabType}" ng-click="switchTab('videos')">
+                            <a href=""  ui-sref="videos">安全商店</a>
+
+                        </li>
+
+                        <li ng-class="{active:'other'==tabType}" ng-click="switchTab('other')" class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                Java
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">jmeter</a></li>
+                                <li><a href="#">EJB</a></li>
+                                <li><a href="#">Jasper Report</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">分离的链接</a></li>
+                                <li class="divider"></li>
+                                <li><a href="#">另一个分离的链接</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--轮播-->
+        <div class="jumbotron">
+            <div class="container">
+                <h1>欢迎登陆页面！</h1>
+                <p>这是一个超大屏幕（Jumbotron）的实例。</p>
+                <p>
+                    <a class="btn btn-primary btn-lg" role="button">发现更多</a>
+                </p>
+            </div>
+        </div>
+
+        <!--正文-->
+        <div class="container">
+
+            <div  ui-view></div>
+        </div>
+
+
+        <!--底部导航-->
+        <div class="jumbotron text-center" style="margin-bottom:0">
+          <p>Copyright©2018-2030 绿盟云 All Rights Reserved.</p>
+        </div>
+
+        <script src="lib/js/angular.min.js"></script>
+        <script src="lib/js/angular-ui-router.min.js"></script>
+        <script src="lib/js/jquery.min.js"></script>
+        <script src="lib/js/bootstrap.min.js"></script>
+        <script src="lib/js/ui-bootstrap-tpls.js"></script>
+        <script src="lib/js/tm.pagination.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/server.js"></script>
+        <script src="js/directive.js"></script>
+        <script src="js/news/NewsController.js"></script>
+        <script type="text/javascript" src="lib/ckplayer/ckplayer.js" charset="UTF-8"></script>
+        <script src="js/video/VideoController.js"></script>
+        <script src="js/video/modal/videoPlayer.js"></script>
+
+        <script>
+            window._bd_share_config={
+                "common": {
+                    "bdSnsKey":{},
+                    "bdText":"",
+                    "bdMini":"1",
+                    "bdMiniList":false,
+                    "bdPic":"",
+                    "bdStyle":"1",
+                    "bdSize":"16"
+                },
+                "slide":{
+                    "type":"slide",
+                    "bdImg":"8",
+                    "bdPos":"right",
+                    "bdTop":"90.39999389648438"
+                },
+                "image":{
+                    "viewList":["qzone","tsina","weixin"],
+                    "viewText":"分享到：",
+                    "viewSize":"24"
+                },
+                "selectShare":{
+                    "bdContainerClass":null,
+                    "bdSelectMiniList":["qzone","tsina","weixin"]
+                }
+            };
+            with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='lib/js/share.js?v=89860593.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+        </script>
+    </body>
+</html>

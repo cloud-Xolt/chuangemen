@@ -1,0 +1,39 @@
+<!--新闻主体-->
+
+<div>
+
+    <!--新闻搜索框 -->
+        <input type="text" ng-model="news_filter" class="form-control input-lg">
+    <div class="input-group">
+        <span ng-click="refresh()" class="input-group-addon btn btn-primary">搜索</span>
+    </div>
+
+    <!--新闻列表-->
+    <div class="row">
+        <div ng-repeat=" news_item in news_items">
+            <div class="col-lg-3 col-md-4 col-sm-4 mb newsBox">
+                <div class="content-panel pn">
+                    <div class="news_tu">
+
+                        <a href="newsDetail_forward_2530331" class="tiptitleImg"  target="_blank">
+                            <img ng-if="news_item.image" class="top_image" src="{{news_item.image}}">
+                            <img ng-if="!news_item.image" class="top_image" src="images/blog-bg.jpg">
+                        </a>
+                    </div>
+                    <div class="blog-text">
+                        <p>{{news_item.title}}</p>
+                        <div class="pdtt_trbs">
+                            <a href="">{{news_item.source}}</a>
+                            <span>{{news_item.occurd_time}}</span>
+                            <div class="trbstxt">推荐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--翻页-->
+    <tm-pagination conf="paginationConf" class="pull-right"></tm-pagination>
+
+</div>

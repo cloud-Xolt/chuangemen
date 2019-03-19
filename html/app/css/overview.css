@@ -1,0 +1,118 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.mb {
+	margin-bottom: 25px;
+}
+.content-panel {
+	background: #ffffff;
+	box-shadow: 0px 3px 2px #aab2bd;
+	padding-top: 15px;
+	padding-bottom: 5px;
+}
+.pn {
+	height: 250px;
+}
+
+.newsBox .blog-bg .badge {
+	position: absolute;
+    top: 1px;
+    left: 16px;
+}
+.top_image {
+    height: 150px;
+    width: 262px;
+}
+.badge-popular {
+	background: #3498db;
+	width: 75px;
+    height: 42px;
+	line-height: 38px;
+	font-size: 11px;
+	color: #fff;
+	text-align: center;
+	border-radius: 100%;
+}
+.blog-title {
+	background: rgba(0,0,0,0.5);
+	bottom: 100px;
+	padding: 6px;
+	color: white;
+	font-weight: 700;
+	position: absolute;
+	display: block;
+	width: 120px;
+}
+.blog-text {
+	margin-left: 8px;
+	margin-right: 8px;
+	margin-top: 15px;
+	font-size: 14px;
+}
+a, a:hover, a:focus {
+	text-decoration: none;
+	outline: none;
+}
+.pdtt_trbs {
+	line-height: 24px;
+	font-size: 12px;
+	position: relative;
+	z-index: 999;
+}
+.pdtt_trbs a {
+	min-width: 40px;
+	height: 24px;
+	display: inline-block;
+	padding-right: 8px;
+	color: #a0a0a0;
+}
+.trbstxt {
+	line-height: 16px;
+	float: right;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 2px 4px 6px 8px;
+	overflow: hidden;
+	background: url(../images//sybg.png) no-repeat right center;
+	position: absolute;
+	right: -14px;
+	top: 0;
+}
+.pdtt_trbs span {
+	margin-left: 4px;
+	height: 24px;
+	color: #a0a0a0;
+}
+
+.navbar-default{
+    margin-bottom: 0px;
+}
+
+.jumbotron {
+	margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.news_tu {
+    margin-top: -15px;
+	background-attachment: relative;
+	background-position: center center;
+	min-height: 150px;
+	width: 100%;
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	-o-background-size: 100%;
+	background-size: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+    overflow: hidden;
+    position: relative;
+
+}

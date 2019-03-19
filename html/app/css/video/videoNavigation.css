@@ -1,0 +1,63 @@
+.video-search {
+    background-color: #333333;
+    height: 34px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #090909;
+    border-bottom: 1px solid;
+    height: 37px;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #777777;
+    text-align: center;
+    padding: 9px 10px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.topnav a.active {
+    background-color: #777777b8;
+    color: white;
+    font-weight:bold;
+    border-radius:15px;
+    -moz-border-radius:25px; /* Old Firefox */
+}
+
+.topnav a:hover {
+    background-color: black;
+    color: white;
+    font-weight:bold;
+}
+
+.topnav .search-container {
+    float: right;
+}
+
+.topnav input[type=text] {
+    padding: 6px;
+    font-size: 15px;
+    border: none;
+}
+
+.topnav .search-container button {
+    float: right;
+    margin-top: 8px;
+    margin-right: 16px;
+    margin-left: 10px;
+    background: black;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+
+.topnav .search-container button:hover .fa {
+        color: white;
+}
+
+

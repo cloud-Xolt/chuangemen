@@ -1,0 +1,21 @@
+# 安装scrapy
+    1、安装wheel
+        pip install wheel
+    2、安装lxml
+        https://pypi.python.org/pypi/lxml/4.1.0
+    3、安装pyopenssl
+        https://pypi.python.org/pypi/pyOpenSSL/17.5.0
+    4、安装Twisted
+        https://www.lfd.uci.edu/~gohlke/pythonlibs/
+    5、安装pywin32
+        https://sourceforge.net/projects/pywin32/files/
+    6、安装scrapy
+        pip install scrapy
+
+1、创建工程
+scrapy startproject movie
+ 
+
+2、创建爬虫程序
+cd movie
+scrapy genspider meiju agmjcj.com

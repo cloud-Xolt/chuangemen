@@ -1,0 +1,67 @@
+<link href="css/video/medile.css" rel='stylesheet' type='text/css' />
+
+<!-- font-awesome icons -->
+<link rel="stylesheet" href="css/video/font-awesome.min.css" />
+<link rel="stylesheet" href="css/video/videoNavigation.css" rel="stylesheet">
+
+<div class="movie-browse-agile">
+    <ul class="breadcrumb">
+        <li ng-repeat="typeMap in allVideoType" class="active">
+            <a href="" ng-click="getVideoName(typeMap.id, 1)">{{typeMap.name}}</a>
+        </li>
+    </ul>
+
+      <!--搜索框 -->
+    <div class="input-group">
+        <input type="text" ng-model="videoFilter" class="form-control input-lg" ng-keyup="myKeyup($event)">
+        <span ng-click="getVideoName()" class="input-group-addon btn btn-primary">搜索</span>
+    </div>
+
+     <!--/browse-agile-w3ls -->
+    <div class="browse-agile-w3ls general-w3ls">
+
+        <div class="container">
+
+            <!--商品列表-->
+            <div class="browse-inner">
+
+                <!--一个商品-->
+                <div class="video-menu-list w3l-movie-gride-agile" ng-repeat="video_item in video_name_map">
+                    <a href="" class="hvr-shutter-out-horizontal" ui-sref="videos-show({videoId: video_item.id})">
+                        <img class="video-image-list"  ng-if="video_item.poster"  src="{{video_item.poster}}" title="{{video_item.des}}" alt="{{video_item.last_sync_time}}" />
+                        <img class="video-image-list"  ng-if="!video_item.poster" src="images/cctv.jpg" title="{{video_item.des}}" alt="{{video_item.last_sync_time}}" />
+                        <div class="w3l-action-icon"><i class="fa fa-play-circle" aria-hidden="true"></i></div>
+                    </a>
+                    <div class="mid-1 video-menu-des">
+                        <div class="w3l-movie-text">
+                            <h6><a href="" class="over-shadow">{{video_item.name}}</a></h6>
+                        </div>
+                        <div class="mid-2">
+
+                            <p>{{video_item.last_sync_time}}</p>
+
+                            <!--评分-->
+                            <div class="block-stars">
+                                <ul class="w3l-ratings">
+                                     <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                     <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                     <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                     <li><a href="#"><i class="fa fa-star" aria-hidden="true"></i></a></li>
+                                     <li><a href="#"><i class="fa fa-star-half-o" aria-hidden="true"></i></a></li>
+                                     <!--<li><a href="#"><i class="fa fa-star-o" aria-hidden="true"></i></a></li>-->
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ribben two" ng-if="isNew(video_item.last_sync_time)">
+                        <p>NEW</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--//browse-agile-w3ls -->
+<!--翻页-->
+    <tm-pagination conf="paginationConf" class="pull-right"></tm-pagination>
+</div>

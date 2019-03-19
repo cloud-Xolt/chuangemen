@@ -1,0 +1,24 @@
+.page-list{overflow: hidden;}
+/*.page-list input,.page-list select{padding: 0!important;}*/
+.page-list .pagination {float:left;overflow: hidden;margin: 10px 0;}
+.page-list .pagination span {cursor: pointer;display: inline-block;height:30px;padding: 0 10px;line-height: 30px;}
+.page-list .pagination .separate span{cursor: default; border-top:none;border-bottom:none;}
+.page-list .pagination .separate span:hover {background: none;}
+.page-list .page-total {float:left;margin: 10px 5px 10px 0;}
+.page-list .page-total input, .page-list .page-total select{height: 30px; border: 1px solid #383f4f;border-radius: 2px;}
+.page-list .page-total input {width: 40px;text-align: center;}
+.page-list .page-total select {width: 55px;height:30px;line-height: 30px;}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+}
+.pagination li{
+    display: inline-block;
+}
+.pagination > li > a, .pagination > li > span {
+    position: relative;
+    margin-left: -1px;
+}
